@@ -35,7 +35,7 @@
             InterfaceProxyConverter = new InterfaceProxyConverter();
             InternalTypeConverter = new InternalTypeConverter();
             MessageDataJsonConverter = new NewtonsoftMessageDataJsonConverter();
-            IsoDateTimeConverter = new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.RoundtripKind };
+            IsoDateTimeConverter = new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal };
 
             var namingStrategy = new CamelCaseNamingStrategy();
 
